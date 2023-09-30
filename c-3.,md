@@ -1,0 +1,78 @@
+# 複習考試
+1. 寫印出hello world 的程式
+2. 寫一個印出1~100中，如果是2的倍數，就印出2，3的倍數印出3，6的倍數印出6(不可以印出2、3)
+
+---
+### switch
+
+架構
+```c=
+switch(a){
+case 1:
+printf();
+break;
+case 2:
+printf();
+}
+```
+
+```c=
+#include <stdio.h>
+
+int main() {
+    int choice;
+    printf("Please enter 2 for scissors, 0 for rock, or 5 for paper: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 2:
+            printf("You chose scissors. You win!\n");
+            break;
+        case 0:
+            printf("You chose rock. You win!\n");
+            break;
+        case 5:
+            printf("You chose paper. You win!\n");
+            break;
+        default:
+            printf("Invalid choice. Try again.\n");
+    }
+
+    return 0;
+}
+```
+### while
+while (條件式) 指令一;
+
+while (條件式) {
+
+ 指令一;
+
+ 指令二;
+
+ 指令三;
+
+}
+
+do {
+
+ 指令一;
+
+ 指令二;
+
+ 指令三;
+
+} while (條件式);
+
+while 是先檢查條件是否成立，成立才執行下面的指令，而 do-while 是先執行那些指令，再去檢查條件是否成立
+### 亂數
+https://web.archive.org/web/20210421212249/http://dhcp.tcgs.tc.edu.tw/c/p005.htm
+
+
+---
+
+HW1.
+可以一直重玩，並且計算贏幾場輸幾場的猜拳(用隨機)，輸入-1則結束遊戲
+
+HW2.
+猜0~100之間的數遊戲(需顯示使用者需要猜的range)，可以猜很多次。
